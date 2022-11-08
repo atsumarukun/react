@@ -1,0 +1,11 @@
+version: "3"
+services:
+  react:
+    build: ./
+    image: react
+    container_name: react
+    volumes:
+      - ./blog:/blog
+    working_dir: /blog
+    ports:
+      - 3000:3000
